@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "開始部署蘊涵網站..."
+
+SOURCE_DIR="$HOME/Desktop/Yunhan/"
+TARGET_DIR="/var/www/html/"
+
+echo "來源資料夾：$SOURCE_DIR"
+echo "部署目錄：$TARGET_DIR"
+
+sudo rsync -av --delete \
+  --exclude 'learning-log.md' \
+  --exclude 'deploy.sh' \
+  "$SOURCE_DIR" "$TARGET_DIR"
+
+echo "部署完成。"
+
+echo "檢查部署目錄："
+ls -la "$TARGET_DIR"
+
