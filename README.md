@@ -8,6 +8,7 @@
 - JavaScript 基礎互動
 - Nginx 本機部署流程
 - Git / GitHub 版本控管練習
+- GitHub pull test.
 
 ## Local Development
 
