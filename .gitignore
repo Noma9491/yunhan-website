@@ -18,3 +18,7 @@ deploy.sh.bak
 
 # Logs
 *.log
+.env
+agent/.env
+agent/.venv/
+agent/reports/
