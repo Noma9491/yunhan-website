@@ -4,8 +4,10 @@ set -e
 
 echo "開始部署蘊涵網站..."
 
-SOURCE_DIR="$HOME/Desktop/Yunhan/"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SOURCE_DIR="${SCRIPT_DIR}/"
 TARGET_DIR="/var/www/yunhan/"
+
 
 echo "來源資料夾：$SOURCE_DIR"
 echo "部署目錄：$TARGET_DIR"
