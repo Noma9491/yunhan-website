@@ -22,3 +22,6 @@ deploy.sh.bak
 agent/.env
 agent/.venv/
 agent/reports/
+
+#py.backup
+site_agent.py.bk
