@@ -38,3 +38,7 @@ site_agent.py.bk
 #files 
 nginx/
 agent/
+
+# Local Git workflow tools
+git-workflow.sh
+reports/

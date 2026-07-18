@@ -1,0 +1,22 @@
+{
+  "name": "蘊涵有限公司",
+  "short_name": "蘊涵",
+  "description": "蘊涵有限公司提供資訊安全、醫療器材軟體資安評估、AI 工具導入、網站建置與專案協作服務。",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111b3d",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
