@@ -4,24 +4,37 @@
 # Local notes
 learning-log.md
 
-# Deployment script backup
+# Deployment script 
 deploy.sh.bak
-
+deploy.sh
 # Editor / temporary files
 *.swp
 *.tmp
 
 # Secrets
 .env
+.env.*
+!.env.example
 *.key
 *.pem
+*.p12
+*.pfx
 
 # Logs
 *.log
-.env
 agent/.env
 agent/.venv/
 agent/reports/
+AGENTS.md
 
-#py.backup
+# Backups and generated files
+*.bak
+*.backup
+*~
+__pycache__/
+*.py[cod]
 site_agent.py.bk
+
+#files 
+nginx/
+agent/

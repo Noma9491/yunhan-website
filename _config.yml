@@ -1,0 +1,10 @@
+# GitHub Pages 僅發布網站必要檔案；內部文件與維運工具不輸出到公開站台。
+exclude:
+  - AGENTS.md
+  - README.md
+  - agent
+  - deploy.sh
+  - deploy.sh.bak
+  - gitgnore
+  - learning-log.md
+  - nginx

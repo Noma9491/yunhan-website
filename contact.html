@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>合作諮詢｜蘊涵有限公司 Yunhan Ltd.</title>
+  <meta name="description" content="提供資訊安全、醫療器材軟體資安、AI 工具應用、網站建置與專案協作需求，讓蘊涵協助確認合作範圍與下一步。">
+  <link rel="canonical" href="https://www.yunhan.com.tw/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="蘊涵有限公司">
+  <meta property="og:title" content="合作諮詢｜蘊涵有限公司 Yunhan Ltd.">
+  <meta property="og:description" content="提供目前需求、時程與希望處理的問題，讓蘊涵協助確認合作範圍與下一步。">
+  <meta property="og:url" content="https://www.yunhan.com.tw/contact.html">
+  <!-- TODO: 完成正式社群分享圖後補上 og:image。 -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</head>
+<body class="inner-page contact-page">
+  <a class="skip-link" href="#main-content">跳至主要內容</a>
+
+  <nav class="site-nav" aria-label="主要導覽">
+    <div class="container nav-container">
+      <a class="brand" href="/" aria-label="蘊涵有限公司 Yunhan Ltd. 首頁">
+        <img
+          class="brand-wordmark"
+          src="assets/images/蘊涵logo.webp"
+          alt="蘊涵有限公司 Yunhan Ltd."
+          width="728"
+          height="153"
+        >
+      </a>
+      <div class="nav-links">
+        <a href="/#services">核心服務</a>
+        <a href="/#collaboration">合作方式</a>
+        <a href="/spiritual-revolution/">內容空間</a>
+        <a class="nav-contact" href="/contact.html" aria-current="page">合作諮詢</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="inner-hero">
+    <div class="container inner-hero-content">
+      <p class="page-eyebrow">CONTACT YUNHAN LTD.</p>
+      <h1>合作諮詢</h1>
+      <p class="page-intro">讓我們先理解你的需求，再一起確認適合的合作方式。</p>
+      <p class="page-note">不確定該選擇哪項服務也沒有關係，可以選擇「尚未確定，希望先討論」。</p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section form-section" aria-labelledby="consultation-form-title">
+      <div class="container form-layout">
+        <section class="form-notice" aria-labelledby="form-notice-title">
+          <h2 id="form-notice-title">填寫前請留意</h2>
+          <p>只需要提供目前已知的資訊，不需要一次準備完整文件。</p>
+          <p>完成後，系統會整理成諮詢摘要，並開啟你的 Email 軟體寄送。表單內容不會儲存在網站伺服器。</p>
+          <p>為保護資料安全，初步諮詢請勿填寫密碼、API Key、Token、私鑰、身分證字號、病患資料、完整原始碼或其他機密資訊。</p>
+        </section>
+
+        <div class="form-card">
+          <h2 id="consultation-form-title">提供初步需求</h2>
+          <p class="required-note"><span aria-hidden="true">*</span> 為必填欄位</p>
+
+          <div class="consultation-steps" aria-label="合作諮詢流程">
+            <div class="consultation-step is-active">
+              <span class="step-number">01</span>
+              <span class="step-label">填寫需求</span>
+            </div>
+            <span class="step-divider" aria-hidden="true">→</span>
+            <div class="consultation-step">
+              <span class="step-number">02</span>
+              <span class="step-label">確認並寄出</span>
+            </div>
+          </div>
+
+          <form id="consultation-form" novalidate>
+            <fieldset class="form-group">
+              <legend>基本資料</legend>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="name">姓名或稱呼 <span aria-hidden="true">*</span></label>
+                  <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required data-summary-label="姓名或稱呼">
+                </div>
+                <div class="field">
+                  <label for="organization">公司或團隊名稱 <span class="optional">選填</span></label>
+                  <input id="organization" name="organization" type="text" autocomplete="organization" maxlength="120" data-summary-label="公司或團隊名稱">
+                </div>
+                <div class="field field-full">
+                  <label for="email">Email <span aria-hidden="true">*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required data-summary-label="Email">
+                </div>
+                <div class="field field-full">
+                  <label for="service">希望諮詢的服務 <span aria-hidden="true">*</span></label>
+                  <select id="service" name="service" required data-summary-label="希望諮詢的服務">
+                    <option value="">請選擇</option>
+                    <option value="medical">醫療器材軟體資安</option>
+                    <option value="security">資訊安全檢測與顧問</option>
+                    <option value="ai">AI 工具與流程應用</option>
+                    <option value="website">網站建置與維護</option>
+                    <option value="project">專案管理與跨角色協作</option>
+                    <option value="unsure">尚未確定，希望先討論</option>
+                  </select>
+                  <p class="field-hint" id="service-hint">選擇後會顯示對應問題。</p>
+                </div>
+                <div class="field field-full">
+                  <label for="problem">目前遇到的問題 <span aria-hidden="true">*</span></label>
+                  <textarea id="problem" name="problem" rows="5" maxlength="3000" required data-summary-label="目前遇到的問題"></textarea>
+                </div>
+                <div class="field">
+                  <label for="timeline">希望完成時間或目前時程 <span class="optional">選填</span></label>
+                  <input id="timeline" name="timeline" type="text" maxlength="100" placeholder="例如：預計 9 月送審、希望三個月內完成、尚未確定" data-summary-label="希望完成時間或目前時程">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-group conditional-panel" data-service-panel="medical" hidden disabled>
+              <legend>醫療器材軟體資安</legend>
+              <p class="service-section-note">以下資訊請依目前已知內容填寫，不確定的部分可以先略過。</p>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="medical-market">預計申請市場</label>
+                  <select id="medical-market" name="medical_market" data-summary-label="預計申請市場">
+                    <option value="">請選擇</option><option>TFDA</option><option>FDA</option><option>TFDA 與 FDA</option><option>其他市場</option><option>尚未確定</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="medical-product">產品類型</label>
+                  <select id="medical-product" name="medical_product" data-summary-label="產品類型">
+                    <option value="">請選擇</option><option>Android App</option><option>iOS App</option><option>Web 系統</option><option>雲端系統</option><option>BLE 裝置</option><option>軟體元件或 SDK</option><option>其他</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="medical-stage">目前產品階段</label>
+                  <select id="medical-stage" name="medical_stage" data-summary-label="目前產品階段">
+                    <option value="">請選擇</option><option>規劃中</option><option>開發中</option><option>測試中</option><option>準備送審</option><option>已送審</option><option>收到補件要求</option>
+                  </select>
+                </div>
+              </div>
+              <fieldset class="choice-group">
+                <legend>希望協助內容</legend>
+                <div class="choice-grid">
+                  <label class="choice-item"><input type="checkbox" name="medical_support" value="資安檢測" data-summary-label="希望協助內容"><span>資安檢測</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_support" value="風險評估"><span>風險評估</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_support" value="TFDA 資安文件"><span>TFDA 資安文件</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_support" value="FDA 資安文件"><span>FDA 資安文件</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_support" value="中英文檢測報告"><span>中英文檢測報告</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_support" value="弱點改善驗證"><span>弱點改善驗證</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_support" value="尚未確定"><span>尚未確定</span></label>
+                </div>
+              </fieldset>
+              <h3 class="subsection-title">已知再填</h3>
+              <p class="subsection-note">以下資訊若目前尚未確定，可以先略過。</p>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="medical-deadline">預計送審或交付時間</label>
+                  <input id="medical-deadline" name="medical_deadline" type="text" maxlength="100" data-summary-label="預計送審或交付時間">
+                </div>
+              </div>
+              <fieldset class="choice-group">
+                <legend>目前已有文件</legend>
+                <div class="choice-grid">
+                  <label class="choice-item"><input type="checkbox" name="medical_documents" value="SRS" data-summary-label="目前已有文件"><span>SRS</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_documents" value="SDD"><span>SDD</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_documents" value="風險管理文件"><span>風險管理文件</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_documents" value="SVV"><span>SVV</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_documents" value="SBOM"><span>SBOM</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_documents" value="既有資安檢測報告"><span>既有資安檢測報告</span></label>
+                  <label class="choice-item"><input type="checkbox" name="medical_documents" value="尚未準備"><span>尚未準備</span></label>
+                </div>
+              </fieldset>
+              <p class="panel-boundary">蘊涵提供資安評估、檢測與文件協作，最終送審要求與核准結果仍以主管機關或驗證單位為準。</p>
+            </fieldset>
+
+            <fieldset class="form-group conditional-panel" data-service-panel="security" hidden disabled>
+              <legend>資訊安全檢測與顧問</legend>
+              <p class="service-section-note">以下資訊請依目前已知內容填寫，不確定的部分可以先略過。</p>
+              <div class="field-grid">
+                <div class="field"><label for="security-target">評估標的</label><select id="security-target" name="security_target" data-summary-label="評估標的"><option value="">請選擇</option><option>公司網站</option><option>Web 系統</option><option>Android App</option><option>iOS App</option><option>API</option><option>網路設備</option><option>主機或伺服器</option><option>其他</option></select></div>
+                <div class="field"><label for="security-purpose">評估目的</label><select id="security-purpose" name="security_purpose" data-summary-label="評估目的"><option value="">請選擇</option><option>上線前檢查</option><option>例行安全檢查</option><option>客戶要求</option><option>法規或稽核要求</option><option>發現異常</option><option>尚未確定</option></select></div>
+                <div class="field"><label for="security-scope">是否已有明確檢測範圍</label><select id="security-scope" name="security_scope" data-summary-label="是否已有明確檢測範圍"><option value="">請選擇</option><option>已有</option><option>尚未準備</option><option>不確定</option></select></div>
+                <div class="field"><label for="security-report">是否已有弱點掃描或檢測報告</label><select id="security-report" name="security_report" data-summary-label="是否已有弱點掃描或檢測報告"><option value="">請選擇</option><option>已有</option><option>尚未準備</option><option>不確定</option></select></div>
+                <div class="field"><label for="security-deadline">希望完成時間</label><input id="security-deadline" name="security_deadline" type="text" maxlength="100" data-summary-label="希望完成時間"></div>
+              </div>
+              <div class="conditional-detail" data-reveal-for="security-scope" hidden aria-hidden="true"><label for="security-scope-detail">可簡單說明目前範圍或已有資料</label><textarea id="security-scope-detail" name="security_scope_detail" rows="3" maxlength="1000" data-summary-label="明確檢測範圍補充"></textarea></div>
+              <div class="conditional-detail" data-reveal-for="security-report" hidden aria-hidden="true"><label for="security-report-detail">可簡單說明目前範圍或已有資料</label><textarea id="security-report-detail" name="security_report_detail" rows="3" maxlength="1000" data-summary-label="檢測報告補充"></textarea></div>
+              <fieldset class="choice-group"><legend>希望交付內容</legend><div class="choice-grid">
+                <label class="choice-item"><input type="checkbox" name="security_deliverables" value="風險說明" data-summary-label="希望交付內容"><span>風險說明</span></label><label class="choice-item"><input type="checkbox" name="security_deliverables" value="正式檢測報告"><span>正式檢測報告</span></label><label class="choice-item"><input type="checkbox" name="security_deliverables" value="改善建議"><span>改善建議</span></label><label class="choice-item"><input type="checkbox" name="security_deliverables" value="改善後驗證"><span>改善後驗證</span></label><label class="choice-item"><input type="checkbox" name="security_deliverables" value="尚未確定"><span>尚未確定</span></label>
+              </div></fieldset>
+            </fieldset>
+
+            <fieldset class="form-group conditional-panel" data-service-panel="ai" hidden disabled>
+              <legend>AI 工具與流程應用</legend>
+              <p class="service-section-note">請先描述想改善的流程。涉及工具、資料或使用人數的資訊，可以依目前已知內容填寫。</p>
+              <div class="field-grid">
+                <div class="field field-full"><label for="ai-workflow">想改善的工作流程</label><textarea id="ai-workflow" name="ai_workflow" rows="3" maxlength="1000" data-summary-label="想改善的工作流程"></textarea></div>
+                <div class="field"><label for="ai-tools">目前使用的軟體或工具</label><input id="ai-tools" name="ai_tools" type="text" maxlength="300" data-summary-label="目前使用的軟體或工具"></div>
+                <div class="field"><label for="ai-data">涉及的資料類型</label><input id="ai-data" name="ai_data" type="text" maxlength="300" data-summary-label="涉及的資料類型"></div>
+                <div class="field field-full"><label for="ai-sensitive">是否包含個人資料、醫療資料或商業機密</label><input id="ai-sensitive" name="ai_sensitive" type="text" maxlength="300" data-summary-label="是否包含敏感資料"></div>
+                <div class="field"><label for="ai-level">希望 AI 協助到什麼程度</label><input id="ai-level" name="ai_level" type="text" maxlength="300" data-summary-label="希望 AI 協助程度"></div>
+                <div class="field"><label for="ai-review">是否需要人工審核</label><select id="ai-review" name="ai_review" data-summary-label="是否需要人工審核"><option value="">請選擇</option><option>需要</option><option>不需要</option><option>尚未確定</option></select></div>
+                <div class="field"><label for="ai-stage">導入方式</label><select id="ai-stage" name="ai_stage" data-summary-label="導入方式"><option value="">請選擇</option><option>先進行概念驗證</option><option>評估正式導入</option><option>尚未確定</option></select></div>
+                <div class="field"><label for="ai-users">預計使用人數</label><input id="ai-users" name="ai_users" type="text" maxlength="200" data-summary-label="預計使用人數"></div>
+                <div class="field"><label for="ai-timeline">預計時程</label><input id="ai-timeline" name="ai_timeline" type="text" maxlength="100" data-summary-label="AI 導入預計時程"></div>
+              </div>
+              <p class="panel-boundary">AI 導入前需要確認資料來源、存取權限、人工審核與錯誤處理方式。</p>
+            </fieldset>
+
+            <fieldset class="form-group conditional-panel" data-service-panel="website" hidden disabled>
+              <legend>網站建置與維護</legend>
+              <p class="service-section-note">以下資訊請依目前已知內容填寫，不確定的部分可以先略過。</p>
+              <div class="field-grid">
+                <div class="field"><label for="website-industry">行業或品牌類型</label><input id="website-industry" name="website_industry" type="text" maxlength="200" data-summary-label="行業或品牌類型"></div>
+                <div class="field"><label for="website-launch">預計上線時間</label><input id="website-launch" name="website_launch" type="text" maxlength="100" data-summary-label="預計上線時間"></div>
+                <div class="field"><label for="website-purpose">網站主要目的</label><select id="website-purpose" name="website_purpose" data-summary-label="網站主要目的"><option value="">請選擇</option><option>公司介紹</option><option>服務接案</option><option>個人品牌</option><option>作品展示</option><option>內容發布</option><option>活動宣傳</option><option>其他</option></select></div>
+                <div class="field"><label for="website-maintenance">是否需要後續維護</label><select id="website-maintenance" name="website_maintenance" data-summary-label="是否需要後續維護"><option value="">請選擇</option><option>需要</option><option>不需要</option><option>尚未確定</option></select></div>
+              </div>
+              <fieldset class="choice-group"><legend>預計需要的頁面</legend><div class="choice-grid">
+                <label class="choice-item"><input type="checkbox" name="website_pages" value="首頁" data-summary-label="預計需要的頁面"><span>首頁</span></label><label class="choice-item"><input type="checkbox" name="website_pages" value="關於我們"><span>關於我們</span></label><label class="choice-item"><input type="checkbox" name="website_pages" value="服務項目"><span>服務項目</span></label><label class="choice-item"><input type="checkbox" name="website_pages" value="案例或作品"><span>案例或作品</span></label><label class="choice-item"><input type="checkbox" name="website_pages" value="文章"><span>文章</span></label><label class="choice-item"><input type="checkbox" name="website_pages" value="聯絡頁"><span>聯絡頁</span></label><label class="choice-item"><input type="checkbox" name="website_pages" value="其他"><span>其他</span></label>
+              </div></fieldset>
+              <fieldset class="choice-group"><legend>目前已有素材或設定</legend><div class="choice-grid">
+                <label class="choice-item"><input type="checkbox" name="website_assets" value="Logo" data-summary-label="目前已有素材或設定"><span>Logo</span></label><label class="choice-item"><input type="checkbox" name="website_assets" value="品牌色"><span>品牌色</span></label><label class="choice-item"><input type="checkbox" name="website_assets" value="圖片"><span>圖片</span></label><label class="choice-item"><input type="checkbox" name="website_assets" value="網頁文字"><span>網頁文字</span></label><label class="choice-item"><input type="checkbox" name="website_assets" value="網域"><span>網域</span></label><label class="choice-item"><input type="checkbox" name="website_assets" value="主機空間"><span>主機空間</span></label>
+              </div></fieldset>
+              <fieldset class="choice-group visual-direction-group"><legend>網站視覺方向</legend><div class="visual-direction-grid">
+                <label class="visual-direction-card direction-tech"><input type="radio" name="website_direction" value="偏好 A：專業科技型" data-summary-label="網站視覺方向"><span><strong>A. 專業科技型</strong><small>冷色系、清楚資訊層級，適合科技、資安與 B2B 顧問。</small></span></label>
+                <label class="visual-direction-card direction-warm"><input type="radio" name="website_direction" value="偏好 B：溫度品牌型"><span><strong>B. 溫度品牌型</strong><small>柔和配色，重視品牌故事與圖片。</small></span></label>
+                <label class="visual-direction-card direction-minimal"><input type="radio" name="website_direction" value="偏好 C：極簡內容型"><span><strong>C. 極簡內容型</strong><small>大量留白，以文字、服務或作品為主。</small></span></label>
+                <label class="visual-direction-card direction-mixed"><input type="radio" name="website_direction" value="希望混合調整"><span><strong>希望混合調整</strong><small>可依品牌與內容需求一起討論方向。</small></span></label>
+                <label class="visual-direction-card direction-unsure"><input type="radio" name="website_direction" value="尚未確定"><span><strong>尚未確定</strong><small>先從目前網站需求與參考方向開始討論。</small></span></label>
+              </div></fieldset>
+            </fieldset>
+
+            <fieldset class="form-group conditional-panel" data-service-panel="project" hidden disabled>
+              <legend>專案管理與跨角色協作</legend>
+              <p class="service-section-note">以下資訊請依目前已知內容填寫，不確定的部分可以先略過。</p>
+              <div class="field-grid">
+                <div class="field field-full"><label for="project-goal">專案目標</label><textarea id="project-goal" name="project_goal" rows="3" maxlength="1000" data-summary-label="專案目標"></textarea></div>
+                <div class="field"><label for="project-roles">目前參與角色</label><input id="project-roles" name="project_roles" type="text" maxlength="300" data-summary-label="目前參與角色"></div>
+                <div class="field"><label for="project-period">預計合作期間</label><input id="project-period" name="project_period" type="text" maxlength="100" data-summary-label="預計合作期間"></div>
+                <div class="field field-full"><label for="project-challenge">目前最大的溝通或執行問題</label><textarea id="project-challenge" name="project_challenge" rows="3" maxlength="1000" data-summary-label="目前最大的溝通或執行問題"></textarea></div>
+                <div class="field"><label for="project-scope">是否已有時程與工作範圍</label><select id="project-scope" name="project_scope" data-summary-label="是否已有時程與工作範圍"><option value="">請選擇</option><option>已有</option><option>尚未準備</option><option>不確定</option></select></div>
+                <div class="field"><label for="project-docs">是否已有需求文件或會議紀錄</label><select id="project-docs" name="project_docs" data-summary-label="是否已有需求文件或會議紀錄"><option value="">請選擇</option><option>已有</option><option>尚未準備</option><option>不確定</option></select></div>
+                <div class="field field-full"><label for="project-role-needed">希望蘊涵協助的角色</label><input id="project-role-needed" name="project_role_needed" type="text" maxlength="300" data-summary-label="希望蘊涵協助的角色"></div>
+              </div>
+              <div class="conditional-detail" data-reveal-for="project-scope" hidden aria-hidden="true"><label for="project-scope-detail">可簡單說明目前已有的內容</label><textarea id="project-scope-detail" name="project_scope_detail" rows="3" maxlength="1000" data-summary-label="時程與工作範圍補充"></textarea></div>
+              <div class="conditional-detail" data-reveal-for="project-docs" hidden aria-hidden="true"><label for="project-docs-detail">可簡單說明目前已有的內容</label><textarea id="project-docs-detail" name="project_docs_detail" rows="3" maxlength="1000" data-summary-label="需求文件或會議紀錄補充"></textarea></div>
+            </fieldset>
+
+            <fieldset class="form-group conditional-panel" data-service-panel="unsure" hidden disabled>
+              <legend>尚未確定，希望先討論</legend>
+              <p class="service-section-note">以下資訊請依目前已知內容填寫，不確定的部分可以先略過。</p>
+              <div class="field"><label for="unsure-context">請簡單說明目前的情況</label><textarea id="unsure-context" name="unsure_context" rows="4" maxlength="1000" placeholder="可以簡單說明：目前遇到什麼問題、已經嘗試過哪些方式，以及希望這次討論協助你釐清什麼。" data-summary-label="目前情況"></textarea></div>
+            </fieldset>
+
+            <div class="form-privacy-notice">
+              <p>蘊涵有限公司將使用您提供的資料回覆本次諮詢、確認需求及評估合作方式。您可以選擇是否提供資料，但若缺少必要的聯絡方式或需求內容，我們可能無法完成回覆。</p>
+              <button class="text-link form-privacy-dialog-trigger" type="button" data-dialog-open="privacy-policy-dialog" aria-haspopup="dialog" aria-controls="privacy-policy-dialog">閱讀隱私權保護聲明</button>
+            </div>
+
+            <div class="privacy-consent-field">
+              <label>
+                <input type="checkbox" name="privacyConsent" value="agreed" required data-summary-ignore>
+                <span>我已閱讀並了解隱私權保護聲明，同意蘊涵有限公司於回覆本次諮詢及評估合作所必要的範圍內，使用我所提供的資料。</span>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit">下一步：確認諮詢內容</button>
+              <button class="button button-secondary" type="reset">重新填寫</button>
+            </div>
+            <p class="submit-note">下一步只會顯示摘要，不會立即寄出。</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <section class="summary-panel" id="summary-panel" aria-labelledby="summary-title" hidden>
+            <p class="section-kicker">寄出前確認</p>
+            <h2 id="summary-title">諮詢摘要</h2>
+            <p>請再次確認內容。寄出前請確認未包含密碼、金鑰、病患資料或其他機密資訊。</p>
+            <pre id="summary-text" tabindex="0"></pre>
+            <div class="summary-actions">
+              <a class="button button-primary" id="email-link" href="mailto:yunhan31491@gmail.com">使用 Email 寄出諮詢</a>
+              <button class="button button-secondary" id="copy-summary" type="button">複製諮詢摘要</button>
+              <button class="button button-secondary" id="reset-from-summary" type="button">重新填寫</button>
+              <a class="text-link" href="/">回到首頁</a>
+            </div>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+            <p class="mailto-note">若裝置沒有設定預設 Email 軟體，請複製摘要後寄至 <a href="mailto:yunhan31491@gmail.com">yunhan31491@gmail.com</a>。</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 蘊涵有限公司 Yunhan Ltd. All rights reserved.</p>
+      <div class="footer-links"><a href="/">回到首頁</a><a href="mailto:yunhan31491@gmail.com">Email</a></div>
+    </div>
+  </footer>
+
+  <div class="legal-dialog" id="privacy-policy-dialog" role="dialog" aria-modal="true" aria-labelledby="privacy-policy-title" aria-describedby="privacy-policy-intro" hidden>
+    <div class="legal-dialog-backdrop" data-dialog-close aria-hidden="true"></div>
+
+    <div class="legal-dialog-panel" role="document">
+      <header class="legal-dialog-header">
+        <div>
+          <p class="section-kicker">PRIVACY POLICY</p>
+          <h2 id="privacy-policy-title">隱私權保護聲明</h2>
+        </div>
+        <button class="legal-dialog-close" type="button" aria-label="關閉隱私權保護聲明" data-dialog-close><span aria-hidden="true">×</span></button>
+      </header>
+
+      <div class="legal-dialog-content">
+        <p id="privacy-policy-intro">蘊涵有限公司重視您的個人資料與隱私。本聲明說明您使用本網站及合作諮詢功能時，我們如何蒐集與使用相關資料。</p>
+
+        <section>
+          <h3>一、資料蒐集</h3>
+          <p>當您使用合作諮詢、電子郵件或其他聯絡功能時，我們可能蒐集您主動提供的姓名或稱呼、公司名稱、電子郵件、電話、服務需求及其他聯絡內容。</p>
+          <p>為維持網站正常運作與資訊安全，網站主機或代管服務亦可能產生 IP 位址、存取時間、瀏覽器類型及錯誤紀錄等必要技術資料。</p>
+          <p>請勿透過一般諮詢表單提供密碼、金鑰、完整漏洞資訊、病患資料或其他非初步諮詢所必要的機密內容。</p>
+        </section>
+
+        <section>
+          <h3>二、資料使用目的</h3>
+          <p>我們僅於下列必要範圍內使用您的資料：</p>
+          <ul>
+            <li>回覆諮詢及聯絡事項</li>
+            <li>確認服務需求與合作方式</li>
+            <li>準備會議、建議、報價或契約</li>
+            <li>維護網站正常運作與資訊安全</li>
+            <li>履行法令、契約或權利保護所需之義務</li>
+          </ul>
+          <p>我們不會任意出售、出租或交換您的個人資料。</p>
+        </section>
+
+        <section>
+          <h3>三、資料保存與第三方服務</h3>
+          <p>資料僅於處理聯絡、合作關係、法令義務或資訊安全所必要的期間內保存。</p>
+          <p>如因網站代管、電子郵件、雲端服務或資訊維運需要，由相關服務提供者處理資料，我們將限於提供服務所必要的範圍內使用。</p>
+        </section>
+
+        <section>
+          <h3>四、Cookie 與技術紀錄</h3>
+          <p>本網站目前不以廣告追蹤或跨網站行為分析為目的使用 Cookie。</p>
+          <p>網站代管、安全防護或日後新增的必要功能，仍可能產生技術紀錄或使用必要性儲存技術。如網站未來新增分析、嵌入內容或其他追蹤功能，本聲明將同步更新。</p>
+        </section>
+
+        <section>
+          <h3>五、您的權利</h3>
+          <p>您可依適用法令，就本公司持有的個人資料提出查詢、閱覽、更正、停止使用或刪除等請求。</p>
+          <p>如資料仍涉及契約履行、法定保存、爭議處理或資訊安全紀錄，我們可能於必要範圍內保留或限制處理。</p>
+        </section>
+
+        <section>
+          <h3>六、聯絡與聲明更新</h3>
+          <p>如對個人資料、隱私權或本聲明有任何疑問，請透過合作諮詢頁面與蘊涵有限公司聯絡。</p>
+          <p>本公司得依網站功能、服務內容或法令變動調整本聲明，更新內容將公布於本網站。</p>
+        </section>
+
+        <aside class="legal-contact-card" aria-labelledby="privacy-contact-title">
+          <h3 id="privacy-contact-title">個人資料與隱私事項</h3>
+          <p>如需查詢個人資料處理方式、提出更正或刪除請求，或反映隱私相關疑義，請透過合作諮詢頁面與蘊涵有限公司聯絡。</p>
+          <a class="button button-primary" href="/contact.html?topic=privacy">聯絡蘊涵</a>
+        </aside>
+
+        <footer class="legal-dialog-meta">
+          <p>版本：1.0</p>
+          <p>生效日期：2026 年 7 月 18 日</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
