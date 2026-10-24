@@ -70,6 +70,8 @@
         data-language-switch
         data-title-zh="卡樂里（Kaleli）隱私權政策｜蘊涵有限公司"
         data-title-en="Kaleli Privacy Policy | YUN HAN LIMITED"
+        data-description-zh="卡樂里（Kaleli）隱私權政策，說明 App 如何處理飲食、健康、營養標示照片與訂閱相關資料。"
+        data-description-en="Kaleli Privacy Policy explains how the app processes nutrition, health, nutrition label photos, and subscription-related information."
       >
         <div class="privacy-language-toolbar">
           <p id="privacy-language-label">顯示語言 / Language</p>
@@ -236,5 +238,75 @@
       </nav>
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const languageSwitcher = document.querySelector("[data-language-switch]");
+      const description = document.querySelector('meta[name="description"]');
+
+      if (!languageSwitcher || !description) {
+        return;
+      }
+
+      const supportedLanguages = ["zh-Hant", "en"];
+      const languageOptions = Array.from(
+        languageSwitcher.querySelectorAll("[data-language-option]")
+      );
+      const languagePanels = Array.from(
+        languageSwitcher.querySelectorAll("[data-language-panel]")
+      );
+      const languageHeadings = Array.from(
+        document.querySelectorAll("[data-language-heading]")
+      );
+
+      function setLanguage(language, updateUrl) {
+        const selectedLanguage = supportedLanguages.includes(language)
+          ? language
+          : "zh-Hant";
+
+        languageOptions.forEach(function (option) {
+          const isSelected = option.dataset.languageOption === selectedLanguage;
+          option.setAttribute("aria-pressed", String(isSelected));
+          option.classList.toggle("is-active", isSelected);
+        });
+
+        languagePanels.forEach(function (panel) {
+          panel.hidden = panel.dataset.languagePanel !== selectedLanguage;
+        });
+
+        languageHeadings.forEach(function (heading) {
+          heading.hidden = heading.dataset.languageHeading !== selectedLanguage;
+        });
+
+        document.documentElement.lang = selectedLanguage;
+        document.title = selectedLanguage === "en"
+          ? languageSwitcher.dataset.titleEn
+          : languageSwitcher.dataset.titleZh;
+        description.content = selectedLanguage === "en"
+          ? languageSwitcher.dataset.descriptionEn
+          : languageSwitcher.dataset.descriptionZh;
+
+        if (updateUrl) {
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", selectedLanguage);
+          window.history.replaceState(
+            null,
+            "",
+            url.pathname + url.search + url.hash
+          );
+        }
+      }
+
+      languageOptions.forEach(function (option) {
+        option.addEventListener("click", function () {
+          setLanguage(option.dataset.languageOption, true);
+        });
+      });
+
+      const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+      window.setTimeout(function () {
+        setLanguage(requestedLanguage || "zh-Hant", false);
+      }, 0);
+    });
+  </script>
 </body>
 </html>
